@@ -1,0 +1,339 @@
+/* 1. Habaynta Guud */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b132b;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Menu */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: ceter;
+    padding: 20px 8%;
+    position: absolute;
+    width: 84%;
+    z-index: 100;
+}
+
+.logo { font-size: 24px; font-weight: bold; }
+.logo span { color: #fc6b0b; text-decoration: underline; }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: #f39c12; }
+
+/* 3. Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(11, 19, 43, 0.7); /* Midabka buluugga oo madow ah */
+}
+
+.content { position: relative; z-index: 2; max-width: 600px; }
+
+/* 4. Animation-ka Dhaqdhaqaaqa (Floating) */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-text {
+    font-size: 30px;
+    margin: 0;
+    animation: float 5s ease-in-out infinite;
+}
+
+.animate-text span {
+    background-color: #f39c12;
+    color: white;
+    padding: 0 15px;
+}
+
+/* 5. Badhamada */
+.btn-container { margin-top: 0px; display: flex; gap: 20px; }
+
+.btn-orange {
+    background: #ef950e;
+    border: none;
+    padding: 15px 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-outline { 
+    background: transparent;
+    border: 2px solid rgb(246, 231, 231);
+    color: rgb(241, 229, 229);
+    padding: 15px 35px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.btn-orange:hover { transform: scale(1.05); }
+/* Qurxinta Qaybta About (Qoraal Keliya) */
+.about-simple {
+    padding: 100px 15%; /* Meel ballaaran u reeb dhinacyada */
+    background-color: #d0d0da; /* Midab cad oo nadiif ah */
+    color: #1d4da6; /* Qoraal madow ah si si fudud loogu akhriyo */
+    text-align: center; /* Qoraalka badhtamaha keen */
+}
+
+.about-container-simple h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-container-simple h2 span {
+    color: #f39c12; /* Midabkaaga Orange-ka ah */
+}
+
+.line-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #f09e1b;
+    margin: 0 auto 30px auto; /* Xariiq yar oo qurxiyo h1 hoostiisa */
+}
+
+.about-container-simple p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #03030c; /* Midab dambas madow ah */
+}
+/* Qurxinta Qaybta Services */
+.services-section {
+    padding: 100px 8%;
+    background-color: #0b132b; /* Midabkaaga rasmiga ah */
+    text-align: center;
+    color: rgb(143, 78, 78);
+}
+
+.section-title {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.section-title span {
+    color: #f39c12; /* Midabka Orange-ka ah */
+}
+
+/* Habaynta Card-yada Adeegyada */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(243, 156, 18, 0.2);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+/* Saamaynta marka Mouse-ka la saaro (Hover) */
+.service-card:hover {
+    background: #f39c12;
+    transform: translateY(-10px);
+}
+
+.service-card:hover h3, .service-card:hover p {
+    color: #0b132b;
+}
+
+.service-card .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f39c12;
+}
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Qurxinta Contact Form */
+.contact-section { padding: 80px 8%; background: #f4f4f4; color: #333; }
+.contact-form { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.contact-form input, .contact-form textarea {
+    width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px;
+}
+
+/* Qurxinta Footer */
+footer {
+    background: #0b132b; color: white; padding: 40px 8%; text-align: center;
+}
+footer h3 { color: #f39c12; margin-bottom: 15px; }
+.footer-bottom { margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; font-size: 14px; }
+/* Habaynta Guud ee Contact */
+.contact-section {
+    padding: 100px 8%;
+    background-color: #f9f9f9; /* Midab khafiif ah */
+    text-align: center; /* Tani waxay dhexda keenaysaa qoraalka iyo xariiqda */
+}
+
+.contact-header h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #1b263b;
+}
+
+.contact-header h2 span {
+    color: #f39c12; /* Midabkaaga Orange-ka ah */
+}
+
+/* Xariiqda Orange-ka ah ee la siman qoraalka */
+.line-divider {
+    width: 70px;
+    height: 5px;
+    background-color: #f39c12;
+    margin: 0 auto 50px auto; /* '0 auto' ayaa dhexda keenaya */
+    border-radius: 10px;
+}
+
+/* Sanduuqa Form-ka */
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #f39c12;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+}
+
+/* Badhanka Send Message */
+.btn-send {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-send:hover {
+    background-color: #e67e22;
+    transform: translateY(-3px);
+}
+/* Login Modal Background */
+.login-modal {
+    display: flex; /* Wuxuu soo baxayaa si automatic ah */
+    position: fixed;
+    z-index: 9999; /* Wuxuu ka sarreeyaa wax walba */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 19, 43, 0.98); /* Madow aad u culus */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sanduuqa Login-ka */
+.login-box {
+    background: #1b263b;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #f39c12;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 0 30px rgba(243, 156, 18, 0.3);
+}
+
+.login-box h2 {
+    color: white;
+    margin-top: 20px;
+}
+
+.login-box .input-field input {
+    width: 100%;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-login {
+    background-color: #f39c12;
+    color: black;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #e67e22;
+}

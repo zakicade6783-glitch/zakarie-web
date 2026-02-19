@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Moha Project - Mobile Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-overlay" class="login-modal">
+    <div class="login-box">
+        <div class="logo-modal">Somali System <span>Solutions</span></div>
+        <h2>Gali Email-kaaga</h2>
+        <p>Si aad u sii wadato isticmaalka website-ka, fadlan ku xir email-kaaga.</p>
+        
+        <div class="input-field">
+            <input type="email" id="user-email" placeholder="Magacaaga@gmail.com" required>
+        </div>
+        
+        <button onclick="handleLogin()" class="btn-login">Gali Website-ka</button>
+        <p class="security-note">🛡️ Xogtaadu waa mid ammaan ah.</p>
+    </div>
+</div>
+
+    <header>
+        <div class="logo">Eng zakarie <span>Web</span></div>
+        <nav>
+           <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Service</a></li>
+    <li><a href="#ai">Artificial Intelligence</a></li> 
+    <li><a href="#contact">Contact</a></li>
+</ul>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <div class="overlay"></div>
+        <div class="content">
+           <h1 class="animate-text">  <span> SOMALI SYSTEM SOLUTIONS</span></h1>
+            <h3 class="tagline">Comprehensive IT & AI Solutions</h3>
+            <p class="description">
+                At Somali System Solutions, we bridge the gap between complex technology and your business goals. We specialize in delivering end-to-end digital transformation through cutting-edge IT services and Artificial Intelligence.
+            </p>
+            
+            <div class="btn-container">
+                <button class="btn-orange" onclick="prevSlide()"><span>‹</span> PREVIOUS</button>
+                <button class="btn-outline" onclick="nextSlide()">NEXT <span>›</span></button>
+            </div>
+        </div>
+    </main>
+
+    <script src="java.js"></script>
+</body>
+</html>
+<section id="about" class="about-simple">
+    <div class="about-container-simple">
+        <h2>ABOUT <span>US</span></h2>
+        <div class="line-divider"></div>
+        
+        <p class="main-text">
+            Ku soo dhowaada <strong>Somali System Solutions</strong>. <br>
+            Waxaan nahay shirkad u taagan bixinta xalalka tignoolajiyada ee ugu casrisan, <br>
+            annagoo macaamiisheena ka caawina sidii ay u gaari lahaayeen hadafkooda ganacsi. 
+        </p>
+
+        <p class="sub-text">
+            Hadafkayagu waa inaan dhisno nidaamyo dhijitaal ah oo fududeeya shaqada, <br>
+            korna u qaada wax-soosaarka. Waxaan ku takhasusnay horumarinta software-ka, <br>
+            AI, iyo adeegyada daruuraha (Cloud Services). <br>
+            Kooxdayadu waxay had iyo jeer diyaar u tahay inay bixiso tayo sare iyo hufnaan buuxda.
+        </p>
+    </div>
+</section>
+<section id="services" class="services-section">
+    <div class="container">
+        <h2 class="section-title">OUR <span>SERVICES</span></h2>
+        <div class="line-divider"></div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">💻</div>
+                <h3>Software Development</h3>
+                <p>Waxaan dhisnaa barnaamijyo casri ah oo loogu talagalay ganacsiyada iyo shakhsiyaadka.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🛡️</div>
+                <h3>Cybersecurity</h3>
+                <p>Sugidda amniga xogtaada iyo difaaca weerarada dhijitaalka ah ee halista ah.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🤖</div>
+                <h3>AI & Machine Learning</h3>
+                <p>Isticmaalka tignoolajiyada AI si loo fududeeyo go'aan qaadashada ganacsigaaga.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🌐</div>
+                <h3>IT Networking</h3>
+                <p>Habaynta iyo maamulidda isgaarsiinta gudaha ee shirkadaha (LAN/WAN).</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">☁️</div>
+                <h3>Cloud Solutions</h3>
+                <p>Kaydinta xogta iyo maamulidda adeegyada daruuraha si meel walba looga galo.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🛠️</div>
+                <h3>IT Support & Maintenance</h3>
+                <p>Dayactirka joogtada ah iyo kaalmada farsamo ee qalabkaaga tignoolajiyada.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section id="contact" class="contact-section">
+    <div class="contact-header">
+        <h2>CONTACT <span>US</span></h2>
+        <div class="line-divider"></div>
+    </div>
+
+    <div class="contact-container">
+        <form action="https://formspree.io/f/Zakicadde598@gmail.com" method="POST" class="contact-form">
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Magacaaga " required>
+            </div>
+            <div class="input-group">
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Email-kaaga" required>
+            </div>
+            <div class="input-group">
+                <textarea name="message" rows="5" placeholder="Farriintaada halkan ku qor..." required></textarea>
+            </div>
+            <button type="submit" class="btn-send">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <h3>Eng Zakarie Abdirahman Sheikh Mohammed</h3>
+        <p>Email: Zakicadde598@gmail.com</p>
+        <p>WhatsApp: <a href="https://wa.me/252613239059" target="_blank" style="color: #25D366;">+252 613 239059</a></p>
+        <div class="footer-bottom">
+            &copy; 2026 Somali System Solutions | All Rights Reserved.
+        </div>
+    </div>
+</footer>
